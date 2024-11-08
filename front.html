@@ -5,7 +5,81 @@
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
     <title>Rainwater Harvesting</title>
     <link rel="stylesheet" href="style3.css">
+    <style>
+            html {
+        height: 100%;
+        }
+
+        .login-box {
+        margin-left: 50%;
+        margin-top: 12em;
+        height: 26em;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        }
+
+        .login-box h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        }
+
+        .login-box .user-box {
+        position: relative;
+        }
+
+        .login-box .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+        }
+        .login-box .user-box label {
+        position: absolute;
+        top:0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+        }
+
+        .login-box .user-box input:focus ~ label,
+        .login-box .user-box input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03e9f4;
+        font-size: 12px;
+        }
+
+        .login-box form a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: #03e9f4;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px
+        }
+</style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -108,38 +182,34 @@
     
     
         <center><h2>To contribute in setting up a rainwater harvesting plant for needy people, please fill the form:</h2></center> <br>
-        <div style="color: black; font-size: 20px; border: 5px solid; width: 25vw; margin-left: 28.5em; padding: 10px;">
-            <form>
-            <label style="font-size: 20px;">First Name: <input style="font-size: 20px;" type="text" name="First Name" placeholder="First name" required></label>
-            <br><br>
-            
-            <label style="font-size: 20px;">Last Name: <input style="font-size: 20px;" type="text" name="First Name" placeholder="Last Name" required></label>
-            <br><br>
-            
-            <label style="font-size: 20px;">Date of Birth: <input style="font-size: 20px;" type="date" name="First Name" placeholder="Your Last Name" required></label>
-            <br><br>
-            
-            <label style="font-size: 20px;">Gender: <label>Male<input style="font-size: 25px;" type="radio" name="gender" placeholder="Male" required></label></label>
-            
-            <label style="font-size: 20px;">Female<input style="font-size: 20px;" type="radio" name="gender" placeholder="Female" required></label>
-            
-            <label style="font-size: 20px;">Other<input style="font-size: 20px;" type="radio" name="gender" placeholder="Other" required></label>
-            <br><br>
         
-        
-            <label style="font-size: 20px;">Email: <input style="font-size: 20px;" type="email" name="Email" placeholder="Email"  required title="Enter valid email address"></label>
-            <br><br>
-        
-        
-            <Label style="font-size: 20px;">I Agree <input style="font-size: 20px;" type="checkbox" name="check" required> </Label>
-            <br><br>
-        
-            <input style="font-size: 20px; background-color: rgb(61, 163, 247); margin-left: 40%;" type="submit" name="submit" >
-    
-    </form>
-    </div>
-    
-    <section class="content">
+    <div class="login-box">
+        <h2>Register</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Name</label>
+          </div>
+          <div class="user-box">
+            <input type="email" name="" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Phone</label>
+          </div>
+          <div class="user-box">
+            <input type="checkbox" name="" required="" style="margin-top: 0.6em; margin-left: -2em;">
+            <label style="margin-left: 8.5em;">I Agree </label>
+          </div>
+          <div style="margin-left: 7.4em;">
+            <input style="font-size: 17px;" type="submit" name="" required="" >
+          </div>
+        </form>
+      </div>
+      
+
+    <section class="content" style="margin-top: 10px;">
         <p style="font-size: 15px; color: rgb(0, 0, 0);">This website explores the benefits, challenges, and implementation aspects of rainwater harvesting, providing valuable insights for individuals, communities, and organizations interested in embracing this vital 
         practice. <br><br> &copy; 2024 My Webpages</p>
 
